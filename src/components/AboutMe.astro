@@ -1,0 +1,43 @@
+---
+const personalImageAlt = 'Giovanni Olmos';
+---
+
+<article
+  class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"
+>
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+  >
+    <p>
+      Me llamo Giovanni Olmos pero suelen llamarme Giova/Gio. Actualmente vivo
+      en San Juan, Argentina. Soy apasionado por la tecnología desde que tengo
+      uso de la razón, uso la computadora a diario desde que tengo 7 años.
+    </p>
+
+    <p>
+      Empecé a interesarme en la programación a principios de la pandemia de
+      manera autodidacta pero no tenía muchos avances y al tener que trabajar
+      por mis necesidades económicas lo dejé de lado, hasta que en 2023 decidí
+      dejar el trabajo en el que estaba para dedicarme a lo que realmente me
+      interesaba, la <strong>programación</strong>.
+
+      <p>
+        Actualmente, soy <strong>Desarrollador Web Full Stack</strong> y estoy a
+        punto de recibirme como <strong
+          >Técnico Superior en Programación.</strong
+        > Estoy buscando insertarme en el mercado laboral IT para aplicar lo que
+        he aprendido en todo este tiempo y llevar mis conocimientos al siguiente
+        nivel.
+      </p>
+    </p>
+  </div>
+
+  <img
+    width="200"
+    height="200"
+    src="/yo-avatar.png"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    style="object-position: 50% 50%"
+  />
+</article>
