@@ -14,7 +14,15 @@ const PROJECTS = [
     link: 'https://edufee.vercel.app/',
     github: 'https://github.com/MCEmilyMorales/Edufee-',
     image: '/projects/edufee-landing.webp',
-    tags: [TAGS.NEXT, TAGS.NEST, TAGS.TAILWIND],
+    tags: [
+      TAGS.NEXT,
+      TAGS.NEST,
+      TAGS.JWT,
+      TAGS.AUTH0,
+      TAGS.TYPEORM,
+      TAGS.POSTGRESQL,
+      TAGS.TAILWIND,
+    ],
   },
   {
     title: 'GOAL TIME',
@@ -46,13 +54,13 @@ const PROJECTS = [
             {title}
           </h3>
           <div class="flex flex-wrap mt-2">
-            <ul class="flex flex-row mb-2 gap-x-2">
+            <ul class="flex flex-wrap gap-2 max-w-full sm:gap-3 md:gap-4">
               {tags.map((tag) => (
-                <li>
+                <li class="max-w-[100px] md:max-w-[150px]">
                   <span
-                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                    class={`flex gap-x-2 rounded-full text-xs md:text-sm ${tag.class} py-1 px-2`}
                   >
-                    <tag.icon class="size-4" />
+                    <tag.icon class="size-4 md:size-5" />
                     {tag.name}
                   </span>
                 </li>
